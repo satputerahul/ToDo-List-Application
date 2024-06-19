@@ -99,6 +99,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.deleteTask = {
             
+            //delete task
             self.listArr.remove(at: indexPath.row)
             self.tv_todoList.deleteRows(at: [indexPath], with: .fade)
             
